@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login/Signup Page</title>
-     <style>
+    <title>User Registration</title>
+    <style>
         body {
             font-family: Arial, sans-serif;
             background-color: #f4f4f4;
@@ -15,8 +15,13 @@
             align-items: center;
             height: 100vh;
         }
-        
 
+        form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
 
         label {
             display: block;
@@ -42,48 +47,33 @@
         button:hover {
             background-color: #45a049;
         }
-    </style> 
+    </style>
 </head>
 <body>
-    <!-- <img src="pic.webp" alt="Description of the image"> -->
 
-    <form id="loginForm">
-        <h2>Login</h2>
+    <form id="userForm">
+        <h2>User Registration</h2>
         <label for="username">Username:</label>
         <input type="text" id="username" name="username" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
 
         <label for="password">Password:</label>
         <input type="password" id="password" name="password" required>
 
-        <button type="submit">Login</button> <br>
-        <label for="signup"> Create New Account  ..!</label>
-        <a href="user.html">Signup here</a>
+        <label for="confirmPassword">Confirm Password:</label>
+        <input type="password" id="confirmPassword" name="confirmPassword" required>
+
+        <button type="submit">Register</button>
     </form>
 
-    <!-- <form id="signupForm">
-        <h2>Signup</h2>
-        <label for="newUsername">Username:</label>
-        <input type="text" id="newUsername" name="newUsername" required>
-
-        <label for="newPassword">Password:</label>
-        <input type="password" id="newPassword" name="newPassword" required>
-        <button type="submit">Signup</button>  
-     <label for="signup"> Create New Account  ..!</label>
-        <a href="user.html">Signup here</a>
-    </form> -->
-
     <script>
-        document.getElementById('loginForm').addEventListener('submit', function(event) {
+        document.getElementById('userForm').addEventListener('submit', function(event) {
             event.preventDefault();
-            // Add login functionality here
-            alert('Login clicked');
+            // Add user registration functionality here
+            alert('Registration submitted successfully');
         });
-
-        // document.getElementById('signupForm').addEventListener('submit', function(event) {
-        //     event.preventDefault();
-        //    // <a href="user.html">Signup here</a>
-        //     alert('Signup clicked');
-        // });
     </script>
 
 </body>
