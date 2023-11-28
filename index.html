@@ -55,7 +55,7 @@
         <label for="password">Password:</label>
         <input type="password" id="password" name="password" required>
 
-        <button type="submit">Login</button>
+        <button type="submit" id="b">Login</button>
         <label for="createaccount">Create New Password...!</label>
         <a href="register.html">Signup here</a>
 
@@ -73,12 +73,33 @@
     </form> -->
 
     <script>
-        
-        document.getElementById('loginForm').addEventListener('submit', function(event) {
-            event.preventDefault();
-            // Add login functionality here
-            alert('Login clicked');
-        });
+        document.getElementById("b").onclick = function(){
+
+            myFunction()
+   
+        };
+        function myFunction() {
+
+            document.getElementById("b").innerHTML= "username"; 
+            // let u1 = 'username';
+            // let p1 = 'password';
+            // console.log("u1");
+            // console.log("p1");
+}
+
+//         // document.getElementById('loginForm').addEventListener('submit', function(event) {
+//         //     event.preventDefault();
+            
+// // if (u1=='user1' && p1=='pass123') 
+// // alret("user is authorized");
+// // {
+    
+// // } else {
+// //     console.log("x is not greater than 5");
+// // }
+
+//             alert('Login clicked');
+//         });
 
         // document.getElementById('signupForm').addEventListener('submit', function(event) {
         //     event.preventDefault();
