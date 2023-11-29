@@ -232,46 +232,44 @@ footer {
 .contact-logs img {
     width: 20px;
 } */
-/* @media screen and (max-width: 480px) {
-    header {
-        flex: 40%;
-        padding: 20px;
+@media only screen and (max-width: 480px) {
+     header {
+        padding: 20px; 
         display: block;
     }
     .search-bar {
         display: block;
     }
     .main-content {
-        display: block;
-        padding: 370px;
-        flex: 30%;
+        
+        padding: 20px;
+        
     }
     footer {
-        flex: 40%;
-        padding: 200px;
+    
+        padding: 20px; 
         display: block;
     }
     
-} */
-@media (max-width:768px) {
-    /* header {
-        flex: 25%;
-        padding: 200px; 
+}
+@media only screen and (max-width:768px) {
+    header {
+        padding: 20px; 
         display: block;
     }
     .search-bar {
         display: block;
-    } */
+    }
     .main-content {
         
         padding: 20px;
         
     }
-    /* footer {
-    flex: 25%;
-  padding: 200px; 
+    footer {
+    
+        padding: 20px; 
         display: block;
-    } */
+    }
     
     }
 
