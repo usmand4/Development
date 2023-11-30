@@ -2,13 +2,13 @@ body {
     font-family: 'Arial', sans-serif;
     padding-left: 20px;
     padding-right: 20px;
-    max-width: 1200px; /* Changed 'width' to 'max-width' for responsiveness */
-    margin: 0 auto; /* Center the content */
+    max-width: 1200px; 
+    margin: 0 auto; 
 }
 
 header {
-    display: grid; /* Use grid layout */
-    grid-template-columns: 1fr auto; /* Three columns: left, center, right */
+    display: grid; 
+    grid-template-columns: 1fr auto; 
     align-items: center;
     background-color: #333;
     padding: 10px;
@@ -112,11 +112,6 @@ header {
     display: grid;
     grid-template-columns: auto auto auto auto;
     gap: 15px;
-    /* display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 80vh; */
-    /* flex: 50%; */
 }
 .main-content .product {
    
@@ -153,43 +148,11 @@ header {
     box-shadow: 0 10px 15px rgba(0,0,0,0.3);
     transform: scale(1.03);
 }
-/* .social-links {
-    list-style-type: none;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-}
-
-.social-links li {
-    margin: 0 10px;
-}
-
-.social-links a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 1.2em;
-}
-.social-links img {
-
-    width: 20px;
-}
-.mf-div{
-    display: flex;
-    
-} */
 
 footer {
     background-color: #333;
     padding: 15px 10px;
-/*     
-    grid-template-rows: repeat(auto-fit, mainmax(270px,1fr));
-    gap: 15px; */
 
-    /* grid-row: auto; */
-    /* flex: 50%; */
-    
-    
 }
 
  footer .product {
@@ -216,32 +179,7 @@ footer {
   font-size: 15px;
   text-align: center;
 }
-/* .product img {
-    width: 40%;
-} */
 
-/* .contact-data {
-    color: #fff;
-    float: left;
-  width: 200%; 
-      text-decoration: none;
-    font-weight: bold;
-    font-size: 1.2em;  
- } */
-
-
-/* .contact-logs a {
-    color: #fff; */
-    /* float: left;
-  width: 25%;  */
-
-    /* text-decoration: none;
-    font-weight: bold;
-    font-size: 1.2em; */
-/* }
-.contact-logs img {
-    width: 20px;
-} */
 @media only screen and (max-width: 480px) {
 
     header {
@@ -289,10 +227,3 @@ footer {
     }
     
     }
-
-/* .contact-description {
-    /* Add styles for contact description */
-
-/* .social-links a:hover {
-    text-decoration: underline;
-} */ 
