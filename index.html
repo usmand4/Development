@@ -45,9 +45,8 @@
     </style> 
 </head>
 <body>
-    <!-- <img src="pic.webp" alt="Description of the image"> -->
 
-    <form id="loginForm">
+    <form name="myForm" action="/index.html" onsubmit="return validateForm()" method="GET">
         <h2>Login</h2>
         <label for="username">Username:</label>
         <input type="text" id="username" name="username" required>
@@ -55,58 +54,38 @@
         <label for="password">Password:</label>
         <input type="password" id="password" name="password" required>
 
-        <button type="submit" id="b">Login</button>
+        <button type="submit">Login</button>
         <label for="createaccount">Create New Password...!</label>
         <a href="register.html">Signup here</a>
 
 
     </form>
-
-    <!-- <form id="signupForm">
-        <h2>Signup</h2>
-        <label for="newUsername">Username:</label>
-        <input type="text" id="newUsername" name="newUsername" required>
-
-        <label for="newPassword">Password:</label>
-        <input type="password" id="newPassword" name="newPassword" required>
-        <button type="submit">Signup</button>  
-    </form> -->
-
     <script>
-        document.getElementById("b").onclick = function(){
+      function validateForm() {
+          let u = document.forms["myForm"]["username"].value;
+          let p = document.forms["myForm"]["password"].value;
+          
+          if (u === "admin" && p === "a123") {
+              // Redirect to the specified URL if the condition is true
+              window.location.href = 'admin.html';
+          } 
+         else if (u === "manager" && p === "m123") {
+              // Redirect to the specified URL if the condition is true
+              window.location.href = 'manager.html';
+          }
+        else  if (u === "user" && p === "u123") {
+              // Redirect to the specified URL if the condition is true
+              window.location.href = 'user.html';
+          }
+          else {
+              // Display an alert if the condition is false
+              alert("Please enter correct values");
+          }
 
-            myFunction()
-   
-        };
-        function myFunction() {
-
-            document.getElementById("b").innerHTML= "username"; 
-            // let u1 = 'username';
-            // let p1 = 'password';
-            // console.log("u1");
-            // console.log("p1");
-}
-
-//         // document.getElementById('loginForm').addEventListener('submit', function(event) {
-//         //     event.preventDefault();
-            
-// // if (u1=='user1' && p1=='pass123') 
-// // alret("user is authorized");
-// // {
-    
-// // } else {
-// //     console.log("x is not greater than 5");
-// // }
-
-//             alert('Login clicked');
-//         });
-
-        // document.getElementById('signupForm').addEventListener('submit', function(event) {
-        //     event.preventDefault();
-        //    // <a href="user.html">Signup here</a>
-        //     alert('Signup clicked');
-        // });
-    </script>
+          // Prevent form submission
+          return false;
+      }
+  </script>
 
 </body>
 </html>
